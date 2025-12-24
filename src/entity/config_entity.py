@@ -14,3 +14,9 @@ class DataIngestionConfig:
     artifact_dir: str = ARTIFACT_DIR
     ingestion_dir: str = os.path.join(ARTIFACT_DIR,DATA_INGESTION_DIR)
     ingested_file_path:str = os.path.join(ARTIFACT_DIR,DATA_INGESTION_DIR,INGESTED_DATA_FILE)
+
+
+@dataclass
+class DataValidationConfig:
+    schema_file_path: str = os.path.join("config","schema.yaml")
+    validation_dir: str = os.path.join(ARTIFACT_DIR, "data_validation")
