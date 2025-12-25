@@ -1,6 +1,10 @@
 artifact
 .venv
 .venv311
+
+notebooks/mlruns/
+notebooks/mlflow.db
+notebooks/transformer_out/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
