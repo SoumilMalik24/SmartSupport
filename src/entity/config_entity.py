@@ -20,3 +20,12 @@ class DataIngestionConfig:
 class DataValidationConfig:
     schema_file_path: str = os.path.join("config","schema.yaml")
     validation_dir: str = os.path.join(ARTIFACT_DIR, "data_validation")
+
+
+@dataclass
+class DataTransformationConfig:
+    transformed_train_path: str
+    transformed_test_path: str
+    tokenizer_path: str
+    test_size: float = 0.2
+    random_state: int = 42

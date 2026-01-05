@@ -8,3 +8,9 @@ class DataIngestionArtifact:
 class DataValidationArtifact:
     validation_status: bool
     message: str
+
+@dataclass
+class DataTransformationArtifact:
+    train_path: str
+    test_path: str
+    tokenizer_path: str

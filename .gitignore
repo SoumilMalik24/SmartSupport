@@ -1,4 +1,7 @@
 artifact
+!artifact/*.dvc
+!artifact/data_transformation/**
+
 .venv
 .venv311
 

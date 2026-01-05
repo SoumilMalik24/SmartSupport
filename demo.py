@@ -8,19 +8,9 @@
 
 
 
-# from src.pipeline.training_pipeline import TrainingPipeline
-
-# if __name__ == "__main__":
-#     pipeline = TrainingPipeline()
-#     artifact = pipeline.start_data_ingestion()
-#     print(artifact)
-
 from src.pipeline.training_pipeline import TrainingPipeline
 
 if __name__ == "__main__":
     pipeline = TrainingPipeline()
+    pipeline.run_pipeline()
 
-    ingestion_artifact = pipeline.start_data_ingestion()
-    validation_artifact = pipeline.start_data_validation(ingestion_artifact)
-
-    print(validation_artifact)
