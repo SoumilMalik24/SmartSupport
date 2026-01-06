@@ -14,3 +14,9 @@ class DataTransformationArtifact:
     train_path: str
     test_path: str
     tokenizer_path: str
+
+@dataclass
+class ModelTrainerArtifact:
+    model_path: str
+    accuracy: float
+    macro_f1: float

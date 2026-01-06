@@ -29,3 +29,11 @@ class DataTransformationConfig:
     tokenizer_path: str
     test_size: float = 0.2
     random_state: int = 42
+
+@dataclass
+class ModelTrainerConfig:
+    model_name: str
+    model_output_dir: str
+    epochs: int
+    batch_size: int
+    learning_rate:float
